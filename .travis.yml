@@ -23,7 +23,9 @@ deploy:
   api_key:
     secure: C7mA0gcE1qBMgYnxfcenPpDmK/Uttgkzu8zy1ebcKmGVukgdp/XsMayUPomhYUoWB0ZmtUc8Y4+wCsrV1tL+sTH6rzmeRP7Gqeip95ftVLG4DqhoVcJVi0l+HwObhbnxIQekLiVt77I/fcN42oviCO27RgurvTYbNIonAtu4OWPijerJMJUBDs4iQNF3pjq1B0F3rwkIbzjr197jpwj4oCYshbu5BsIQRw5KZM+nKzUTg/8o1gQ4ojmdmAsY7n3qubOtTU33InGx94ZMdj8JaGQaVX/wgcyLY7wY8/ohjPjL7BU3/+SuQrOWOHdjicdfZFrG72Wmpj5j85D2fX8ReCowGZw7WKJMd/cSWH3XbkTK2RegtVa9knkTiImsIZRPaMv/OV2dY+T+LqITHTrdBrXbfC+Pk6JjpmZqjgN9JY12VymCYAg9ouQRHRyXZ5UXP7DbHX9HIzriNlccj5WfrXlMPmjPsHcyccuikaHLGfl5atrMpaAoh/sAuXrGKIrfrzbgQDC95+Bq28pn8CTJ495fW5nU5PC9OL6dtXCDcVqgP7HyI1bcgEU39UW0n+1MBmRcT9QgYuAFmravN61Tt9PbjaG2d5S9s+S/tgNbMlpVHnvcyheEKI+Wy8rWGi9RHdT7IMxmDYBzwzdsLgap3gjz/qR3GsBTBOBI93r08f8=
   file_glob: true
-  file: app/build/outputs/apk/app-*.apk
+  file:
+    - app/build/outputs/apk/app-debug*.apk
+    - app/build/outputs/apk/app-release*.apk
   skip_cleanup: true
   on:
     repo: Sloy/github-releases-android
