@@ -22,5 +22,6 @@ deploy:
   file:
     - app/build/outputs/apk/app-release-unsigned.apk
     - app/build/outputs/apk/app-debug.apk
+  skip_cleanup: true
   on:
     repo: Sloy/github-releases-android
