@@ -25,3 +25,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: Sloy/github-releases-android
+    tags: true
